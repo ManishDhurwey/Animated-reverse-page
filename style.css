@@ -1,0 +1,47 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#background{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: -8;
+}
+
+#circle{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    z-index: 999;
+    pointer-events: none;
+    transition: all  cubic-bezier(0.19, 1, 0.22, 1);
+}
+#overlay{
+    position: fixed;
+    height: 100%;
+    z-index: -8;
+    opacity: .6;
+    width: 100%;
+    background-image: url(https://i.pinimg.com/736x/39/21/20/3921202a4792a496aa32b24494ccd1e7.jpg);
+}
+#overlay h1{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 70px;
+    font-weight: 800;
+    font-family: gilroy;
+
+}
